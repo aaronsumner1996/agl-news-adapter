@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: agl-news-adapter
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: agl-news-adapter
+  template:
+    metadata:
+      labels:
+        app: agl-news-adapter
+    spec:
+      containers:
+        - name: agl-news-adapter
+          image: agl-news-adapter:latest
+          imagePullPolicy: Never

@@ -5,3 +5,13 @@ netty:
   default:
     allocator:
       max-order: 3
+
+news-adapter:
+  api:
+    url: https://newsapi.org
+    key: e72d428f4de04559a797c59c1fbbe0d1
+  domains:
+    - videogameschronicle.com
+    - ign.com,destructoid.com
+    - gamesradar.com
+    - gamespot.com
