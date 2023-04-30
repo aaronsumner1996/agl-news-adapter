@@ -1,0 +1,7 @@
+micronaut:
+  application:
+    name: aglNewsAdapter
+netty:
+  default:
+    allocator:
+      max-order: 3
